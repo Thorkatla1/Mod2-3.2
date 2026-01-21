@@ -68,7 +68,8 @@ li {
 header {
   height: calc(100vh - 80px);
 }
-.header__container {
+.header__container,
+.summary__container {
   width: 100%;
   max-width: 720px;
   height: 100%;
@@ -103,7 +104,8 @@ button {
 button:active {
   transform: translateY(1px);
 }
-.btn {
+.btn,
+.btn__summary {
   background-color: #7342d6;
   color: white;
   padding: 12px 24px;
@@ -189,7 +191,8 @@ HIGHLIGHTS
 FEATURES
 */
 #features 
-#latest {
+#latest 
+#summary{
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.219);
 }
@@ -233,4 +236,21 @@ FEATURES
   text-decoration: line-through;
   padding-right: 6px;
   color: #bfbfbf;
+}
+
+/*
+SUMMARY
+*/
+#summary{
+  background-color: #7342d65d;
+}
+.summary__container{
+  position: relative;
+}
+.btn__summary{
+display: flex;
+margin: 0 auto;
+}
+.summary__container{
+  padding: 46px;
 }
