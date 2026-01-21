@@ -188,16 +188,19 @@ HIGHLIGHTS
 /*
 FEATURES
 */
-#features {
+#features 
+#latest {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.219);
 }
 .books {
   display: flex;
+  flex-wrap: wrap;
 }
 .book {
   width: 25%;
   padding: 24px;
+
 }
 .book__img {
   max-height: 380px;
@@ -205,6 +208,7 @@ FEATURES
   cursor: no-drop;
 }
 .book__img--wrapper {
+  
   margin-bottom: 8px;
   border-radius: 4px;
   overflow: hidden;
