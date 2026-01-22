@@ -66,17 +66,13 @@ li {
   color: #7342d6;
   border-radius: 4px;
 }
-.nav__link--primary:hover,
-.btn:hover,
-.btn:active,
-.btn:focus
-{
+.nav__link--primary:hover {
   text-decoration: none;
 }
 
 #landing {
   background-color: rgba(115, 66, 214, 0.219);
-  z-index: 0;
+  z-index: 2;
 }
 header {
   height: calc(100vh - 80px);
@@ -98,7 +94,7 @@ header {
 }
 .header__img--wrapper {
   padding: 20px;
-  z-index: 5;
+  z-index: 2;
 }
 h1 {
   font-size: 56px;
@@ -160,7 +156,7 @@ HIGHLIGHTS
   width: 101vw;
   height: 12vw;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -175,7 +171,6 @@ HIGHLIGHTS
 }
 .highlight__wrapper {
   display: flex;
- 
 }
 .highlight {
   padding: 0 24px;
@@ -255,22 +250,38 @@ FEATURES
 /*
 SUMMARY
 */
+#summary {
+  background-color: rgba(115, 66, 214, 0.219);
+}
+.summary__container {
+  position: relative;
+}
 
 .btn__summary {
-  position: absolute;
-  display: flex;
-  margin: 0 auto;  
- 
- 
+  display: block;
+  margin: 0 auto;
+}
+
+/* center the anchor wrapper around the summary button */
+.summary__container a {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
+/* ensure header button is centered */
+.header__description .btn {
+  margin: 0 auto;
+}
+
+/* prevent hover underline on the summary button link wrapper */
+.summary__container a,
+.summary__container a:hover {
+  text-decoration: none;
 }
 .summary__container {
   padding: 46px;
-  display: flex;
-  align-items: center;
-
 }
-
-
 /*
 FOOTER
 */
@@ -301,4 +312,3 @@ footer {
   margin-bottom: 24px;
   padding: 0 8px;
 }
-/*
