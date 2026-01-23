@@ -129,7 +129,7 @@ button:active {
 }
 
 .container {
-  padding: 56px 0;
+  padding: px 0;
 }
 
 .row {
@@ -148,15 +148,16 @@ HIGHLIGHTS
   max-width: 100 vw;
 }
 
-#highlights::before,
-#highlights::after {
+#highlights:before,
+#highlights:after {
+  background-color: rgba(112, 73, 189, 0.219);
   background: url("assets/wave.svg");
   content: "";
   position: absolute;
   width: 101vw;
   height: 12vw;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -166,8 +167,11 @@ HIGHLIGHTS
   transform: translateY(-100%);
 }
 #highlights:after {
+  background-color: rgba(58, 22, 125, 0.444);
   transform: translateY(100%) rotate(180deg);
   bottom: 1px;
+  z-index: -1;
+ 
 }
 .highlight__wrapper {
   display: flex;
@@ -203,7 +207,9 @@ HIGHLIGHTS
 /*
 FEATURES
 */
-#features #latest #summary {
+#features,
+#latest,
+#summary {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.219);
 }
@@ -250,12 +256,6 @@ FEATURES
 /*
 SUMMARY
 */
-#summary {
-  background-color: rgba(115, 66, 214, 0.219);
-}
-.summary__container {
-  position: relative;
-}
 
 .btn__summary {
   display: block;
