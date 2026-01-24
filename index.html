@@ -28,16 +28,16 @@
           </button>
           <ul class="menu__links">
             <li class="menu__list">
-              <a href="#" class="menu__link">Home</a></li>
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
             </li>
             <li class="menu__list">
-              <a href="#features" class="menu__link">Book</a></li>
+              <a href="#features" class="menu__link"  onclick="closeMenu()">Book</a></li>
             </li>
             <li class="menu__list">
-              <a  class="menu__link no-cursor">Contact</a></li>
+              <a  class="menu__link no-cursor"  onclick="closeMenu()">Contact</a></li>
             </li>
-            </ul> 
-          </div>
+          </ul> 
+        </div>
         </div>
       </nav>
       <header>
@@ -47,7 +47,9 @@
             <h2>
               Find your dream book with <span class="purple">Library</span>
             </h2>
+            <a href="#features">
             <button class="btn">Browse books</button>
+            </a>
           </div>
           <figure class="header__img--wrapper">
             <img src="assets/Undraw_Books.svg" alt="" />
